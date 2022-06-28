@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 app.use("/animes", router); //localhost:5000/animes
+app.use("/users", router); //lcoalhost:5000/users
 
 mongoose
   .connect(
